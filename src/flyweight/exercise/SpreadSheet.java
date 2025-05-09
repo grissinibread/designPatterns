@@ -26,7 +26,7 @@ public class SpreadSheet {
     ensureCellExists(row, col);
 
     var cell = cells[row][col];
-    cells[row][col].setFontFamily(fontFamily);
+//    cells[row][col].setFontFamily(fontFamily);
   }
 
   private void ensureCellExists(int row, int col) {
@@ -41,7 +41,7 @@ public class SpreadSheet {
     for (var row = 0; row < MAX_ROWS; row++)
       for (var col = 0; col < MAX_COLS; col++) {
         var cell = new Cell(row, col);
-        cell.setFontFamily(fontFamily);
+//        cell.setFontFamily(fontFamily);
         cells[row][col] = cell;
       }
   }
