@@ -1,8 +1,9 @@
 ### IntelliJ IDEA ###
+.idea/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.idea/
+DesignPatterns.iml
 
 ### Eclipse ###
 .apt_generated
