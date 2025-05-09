@@ -1,4 +1,4 @@
-package com.codewithmosh.composite;
+package composite.exercise;
 
 public class Demo {
   public static void show() {

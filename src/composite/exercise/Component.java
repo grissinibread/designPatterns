@@ -1,4 +1,5 @@
 package composite.exercise;
 
-public class Component {
+public interface Component {
+    void deploy();
 }

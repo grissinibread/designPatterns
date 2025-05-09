@@ -1,23 +1,17 @@
-package com.codewithmosh.composite;
+package composite.exercise;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team {
-  private List<Object> resources = new ArrayList<>();
+public class Team implements Component {
+  private List<Component> resources = new ArrayList<>();
 
-  public void add(Object resource) {
+  public void add(Component resource) {
     resources.add(resource);
   }
 
   public void deploy() {
-    for (var resource : resources) {
-      if (resource instanceof Truck)
-        ((Truck)resource).deploy();
-      else if (resource instanceof HumanResource)
-        ((HumanResource)resource).deploy();
-      else
-        ((Team)resource).deploy();
-    }
+    for (var resource : resources)
+      resource.deploy();
   }
 }

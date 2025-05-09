@@ -1,6 +1,6 @@
-package com.codewithmosh.composite;
+package composite.exercise;
 
-public class HumanResource {
+public class HumanResource implements Component {
   public void deploy() {
     System.out.println("Deploying a human resource");
   }

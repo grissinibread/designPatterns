@@ -1,6 +1,6 @@
-package com.codewithmosh.composite;
+package composite.exercise;
 
-public class Truck {
+public class Truck implements Component {
   public void deploy() {
     System.out.println("Deploying a truck");
   }
