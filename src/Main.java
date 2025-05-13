@@ -1,10 +1,12 @@
-import mediator.ArticlesDialogBox;
-
-import java.awt.*;
+import chainOfResponsibility.*;
 
 public class Main {
     public static void main(String[] args) {
-        var dialog = new ArticlesDialogBox();
-        dialog.simulateUserInteraction();
+        var compressor = new Compressor(null);
+        var logger = new Logger(compressor);
+        var authenticator = new Authenticator(logger);
+
+        var server = new WebServer(authenticator);
+        server.handle(new HttpRequest("admin", ""));
     }
 }
