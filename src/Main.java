@@ -1,10 +1,7 @@
-import factory.ProductsController;
-import proxy.exercise.Demo;
-import singleton.ConfigManager;
-import singleton.exercise.Logger;
+import abstractFactory.exercise.Demo;
 
 public class Main {
     public static void main(String[] args) {
-        new ProductsController().listProducts();
+        Demo.show();
     }
 }
