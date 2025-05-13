@@ -6,12 +6,11 @@ public class Logger {
     }
 
     private String fileName;
-    private static Logger instance = new Logger();
 
+    private static Logger instance = new Logger();
     public static Logger getInstance() {
         return instance;
     }
-
     private Logger() {}
 
     public void write(String message) {
